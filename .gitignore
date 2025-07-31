@@ -1,14 +1,30 @@
-# Virtual Environment
+# =============================================================================
+# PYTHON GITIGNORE - COMPREHENSIVE
+# =============================================================================
+
+# Virtual Environments
 venv/
 env/
-.env
+ENV/
+env.bak/
+venv.bak/
+.venv/
+.ENV/
+.env.local
+.env.*.local
+pyvenv.cfg
 
-# Python
+# Python Runtime
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
+*.pyo
+*.pyd
+.pyc
+
+# Distribution / Packaging
 build/
 develop-eggs/
 dist/
@@ -25,14 +41,286 @@ share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-MANIFEST
+MANIFEST.in
+pip-log.txt
+pip-delete-this-directory.txt
 
-# IDE
-.vscode/
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit Testing / Coverage
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+htmlcov/
+.testmondata
+
+# Translations
+*.mo
+*.pot
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+
+# Flask
+instance/
+.webassets-cache
+
+# Scrapy
+.scrapy
+
+# Sphinx Documentation
+docs/_build/
+.readthedocs.yml
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+profile_default/
+ipython_config.py
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments & Secrets
+.env
+.env.*
+!.env.example
+.venv
+ENV/
+env/
+venv/
+.ENV
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# PyCharm
 .idea/
+
+# =============================================================================
+# DEVELOPMENT TOOLS
+# =============================================================================
+
+# IDEs and Editors
+.vscode/
+.vs/
 *.swp
 *.swo
+*~
+.project
+.pydevproject
+.settings/
+.metadata/
+*.sublime-project
+*.sublime-workspace
+.idea/
+*.iml
 
-# OS
+# Text Editor Backups
+*~
+*.bak
+*.orig
+*.tmp
+
+# =============================================================================
+# DATABASES & CACHING
+# =============================================================================
+
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# PostgreSQL
+*.pgsql
+
+# Redis
+dump.rdb
+
+# =============================================================================
+# LOGGING & MONITORING
+# =============================================================================
+
+# Log files
+*.log
+logs/
+log/
+*.log.*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# =============================================================================
+# OPERATING SYSTEMS
+# =============================================================================
+
+# macOS
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =============================================================================
+# CLOUD & DEPLOYMENT
+# =============================================================================
+
+# Docker
+.dockerignore
+Dockerfile.*
+docker-compose.override.yml
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Kubernetes
+*.kubeconfig
+
+# =============================================================================
+# SECURITY & CREDENTIALS
+# =============================================================================
+
+# Certificates
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.pfx
+
+# SSH keys
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+*.ppk
+
+# =============================================================================
+# TEMPORARY & CACHE FILES
+# =============================================================================
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+.cache/
+
+# Backup files
+*.backup
+*.bak
+*.old
+
+# =============================================================================
+# PACKAGE MANAGERS
+# =============================================================================
+
+# npm (if using Node.js tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# =============================================================================
+# CUSTOM PROJECT FILES
+# =============================================================================
+
+# Add your project-specific ignores here
+# Example:
+# config/local.py
+# data/
+# output/
