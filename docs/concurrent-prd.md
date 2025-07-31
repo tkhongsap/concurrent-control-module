@@ -43,7 +43,7 @@ Accept via CLI flags or environment variables:
 
 * Script completes all **200** calls.
 * Peak concurrent requests never exceeds **20** (verified by internal counter).
-* At least **95 %** of calls succeed without manual intervention.
+* At least **100 %** of calls succeed without manual intervention.
 
 ## Non-Goals
 
