@@ -25,7 +25,7 @@ response = client.chat.completions.create(
         },
         {
             "role": "user",
-            "content": "I am going to Paris, what should I see?",
+            "content": "I am going to Bangkok, what should I see?",
         }
     ],
     max_completion_tokens=800,
